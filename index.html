@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Title shown in browser tab -->
+    <title>Nigeria Landmarks Map</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Leaflet CSS (required for map styling) -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+</head>
+
+<!-- Call initMap when page loads -->
+<body onload="initMap()">
+
+<!-- Page title -->
+<h1>Nigeria Landmarks Map</h1>
+
+<!-- 
+Dropdown filter for map markers
+Allows user to filter locations by type
+-->
+<select id="filter">
+    <option value="all">All Locations</option>
+    <option value="park">Parks</option>
+    <option value="museum">Museums</option>
+    <option value="university">Universities</option>
+</select>
+
+<!-- 
+Map container
+Leaflet will render the map inside this div
+-->
+<div id="map"></div>
+
+<!-- Link to the JavaScript file that contains Leaflet map logic -->
+<script src="script.js"></script>
+
+</body>
+</html>

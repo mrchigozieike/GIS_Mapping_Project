@@ -1,0 +1,26 @@
+/* 
+Basic styling for the page
+Centers content and sets font
+*/
+body{
+    font-family: Arial;
+    text-align: center;
+}
+
+
+/* 
+Styling for the map container
+Leaflet requires a defined height
+*/
+#map{
+    height: 600px;
+    width: 100%;
+}
+
+
+/* Optional styling for dropdown */
+select{
+    padding: 8px;
+    margin: 10px;
+    font-size: 16px;
+}
